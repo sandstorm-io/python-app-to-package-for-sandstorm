@@ -13,7 +13,7 @@ To build this Sandstorm package:
     vagrant-spk init
     # edit .sandstorm/sandstorm-pkgdef.capnp in your editor of choice
     vagrant-spk dev
-    # visit http://localhost:6080 in a web browser
+    # visit http://local.sandstorm.io:6080 in a web browser
     # log in as Alice, the admin account
     # launch an instance of the example app, play around with it
     # then, press Ctrl-C to stop the tracing vagrant-spk dev
