@@ -4,12 +4,12 @@ Sandstorm platform features.  It was built as a testcase for
 
 To build this Sandstorm package:
 
-    git clone git://github.com/zarvox/vagrant-spk
-    git clone git://github.com/zarvox/python-app-to-package-for-sandstorm
+    git clone git://github.com/sandstorm-io/vagrant-spk
+    git clone git://github.com/sandstorm-io/python-app-to-package-for-sandstorm
     export PATH=$(pwd)/vagrant-spk:$PATH
     cd python-app-to-package-for-sandstorm
     vagrant-spk setupvm uwsgi
-    vagrant-spk up
+    vagrant-spk vm up
     vagrant-spk init
     # edit .sandstorm/sandstorm-pkgdef.capnp in your editor of choice
     vagrant-spk dev
