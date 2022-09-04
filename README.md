@@ -1,6 +1,6 @@
 This repository contains a sample Python app demonstrating some of the
 Sandstorm platform features.  It was built as a testcase for
-[vagrant-spk](https://github.com/zarvox/vagrant-spk)'s support for a Python stack.
+[vagrant-spk](https://github.com/sandstorm-io/vagrant-spk)'s support for a Python stack.
 
 To build this Sandstorm package:
 
@@ -13,7 +13,7 @@ To build this Sandstorm package:
     vagrant-spk init
     # edit .sandstorm/sandstorm-pkgdef.capnp in your editor of choice
     vagrant-spk dev
-    # visit http://local.sandstorm.io:6080 in a web browser
+    # visit http://local.sandstorm.io:6090 in a web browser
     # log in as Alice, the admin account
     # launch an instance of the example app, play around with it
     # then, press Ctrl-C to stop the tracing vagrant-spk dev
