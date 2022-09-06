@@ -3,7 +3,7 @@
 import os
 
 from flask import Flask, render_template
-import oursql
+import MySQLdb
 
 app = Flask(__name__)
 app.debug = True
@@ -25,7 +25,7 @@ def index():
         f.write(str(hit_count) + '\n')
 
     # Test database connection
-    conn = oursql.connect(host='127.0.0.1', user='root', passwd="")
+    conn = MySQLdb.connect(host='localhost', user='root', passwd="")
     curs = conn.cursor()
     curs.execute("SELECT 1 + 1")
     dbresult = curs.fetchone()
@@ -33,4 +33,4 @@ def index():
     return render_template("index.html", hit_count=hit_count, dbresult=dbresult)
 
 application = app.wsgi_app
-print "Prepared."
+print("Prepared.")
