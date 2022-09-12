@@ -1,2 +1,2 @@
 Flask
-oursql
+Flask-MySQLdb
